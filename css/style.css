@@ -1,0 +1,141 @@
+*{
+    --primary-color: #34C8D4;
+    --secondary-color:#dcdcdc;
+    --thirsty-color: rgb(255,255,255);
+    --fourty-color: rgb(0,0,0);
+    --five-color:#1b1c1d;
+    
+}
+@font-face {
+    font-family: text-dark;
+    src: url('Cantarell-Bold.ttf');
+    font-weight: bolder;
+    
+  }
+  @font-face {
+    font-family: text-light;
+    src: url('Cantarell-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  *{
+      font-family: text-light;
+  }
+.content{
+    width: 80%;
+    margin: auto;
+}
+.content-principal{
+    background-image: linear-gradient(to right,var(--thirsty-color) 50%,var(--primary-color) 50%);
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+   
+}
+.menu{
+    width: 35%;
+   
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--fourty-color);
+}
+
+.menu .menu-option{
+    font-family: text-dark;
+    color: var(--fourty-color);
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+.menu .menu-select{
+    color: var(--primary-color);
+}
+.content-logo{
+    z-index: -1;
+    position: fixed;
+   text-align: center;
+   width: 90%;
+  
+
+}
+.logo{
+    font-family: 'text-dark';
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.logo span{
+    color: var(--thirsty-color);
+}
+.content-login{
+    display: flex;
+    flex-direction: row;
+}
+.login{
+    line-height: 50px;
+    margin-right: 5px;
+    font-family: 'text-light';
+    color: var(--thirsty-color);
+    align-items: center;
+    font-size: 1.3rem;
+}
+.login-icon{
+    width: 50px;
+}
+.content-presentacion{
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    width: 80%;
+    align-items: center;
+    
+
+}
+.imagen-principal{
+    position: absolute;
+    left: 45%;
+    max-width: 50%;
+
+}
+.presentacion{
+   width: 30rem; 
+  align-items: center;
+ 
+  height: 50%;
+  
+}
+.presentacion h1{
+    font-family: text-dark;
+    color: var(--primary-color);
+    font-size: 4rem;
+    line-height: 0px;
+    letter-spacing: -.1em;
+    margin: 35px -15px;
+}
+.presentacion p{
+    font-family: arial;
+    font-weight: normal;
+vertical-align: top;
+    font-size: 1.5rem;
+    color: var(--five-color);
+    letter-spacing: .5px;
+    width: 25rem;
+    
+}
+.button-register{
+    margin-top: 100px;
+    font-size: 1rem;
+    border: 5px solid var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: .7em 1.3em;
+    letter-spacing: .2em;
+}
+.button-register:hover{
+    background-color: var(--primary-color);
+    color: var(--thirsty-color);
+    
+}
