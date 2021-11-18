@@ -1,36 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Notes</title>
-  </head>
-  <body class="content-principal">
-    <header class="hero ">
-      <nav class="menu">
-        <a class="menu-option menu-select " href="#home">Home</a>
-        <a class="menu-option" href="#note">Note</a>
-        <a class="menu-option" href="About Us">AboutUs</a>
-      </nav>
-      <div class="content-logo">
-          <h1 class="logo">NO<span>TES</span></h1>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_personal.css">
+</head>
+
+<body class="principal">
+  
+  <nav class="navbar navbar-expand-lg py-2 navbar-light bg-light">
+    <div class="container-lg">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-a mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Note
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Tus Carreras</a></li>
+              <li><a class="dropdown-item" href="#">Tus Materias</a></li>
+
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">AboutUS</a>
+          </li>
+        </ul>
+
+      </div>
+
+  <form class="collapse formulario-sesion " id="collapselogin">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
-    <div class="content-login">
-        <h2 class= "login">login </h2><img class= "login-icon"src="icons/login-icon.svg" alt="login-icon">
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
     </div>
-    </header>
-    <main class="content content-presentacion">
-        
-            <div class="presentacion">
-                <p>Hola,</p>
-                <h1>YO SOY NOTES</h1>
-                <p>Estoy aqui para ayudarte con tus notas academicas</p>
-                <!-- aqui va el enlance a registro-->
-                <a class="button-register" href="" type="button">REGISTRATE</a>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+      <div class=" boton-login align-items-end">
+        <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapselogin" aria-expanded="true" aria-controls="collapselogin">
+        <span class="fw-bolder px-3">login</span><img class="icon-login" src="icons/login-icon.svg" alt="">
+
+        </button>
+       
+      </div>
+
+    </div>
+
+    <a class="navbar-brand text-primary fw-bolder" href="#">NO<span class="text-white ">TES</span> </a>
+  </nav>
+  <div class="hero">
+    <div class="container">
+      <div class="row flex-lg-row flex-column-reverse ">
+        <div class="col-lg-5 text-center text-lg-start text-principal">
+          <p class="display-6">Hola,</p>
+          <h1 class="banner-principal display-1 display-lg-2 fw-bolder  text-primary">YO SOY <span>NOTES</span></h1>
+          <p class="subtitle display-6">Estoy aqui para ayudarte con tus notas academicas</p>
+          <button type="button"
+            class="btn btn-lg btn-outline-primary  fw-bolder border-5 boton-registro">REGISTRATE</button>
+
         </div>
-        <img class= "imagen-principal"  src="images/imagen-principal.svg" alt="imagen-principal">
-    </main>
-  </body>
+
+        <div class="col-lg-7  justify-content-center cont-img">
+          <img class="imagen-principal img-fluid" src="images/imagen-principal.svg" alt="imagen-principal">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,17 @@
+$primary: #34C8D4;
+$danger: #ff4136;
+$secondary: #dcdcdc;
+
+
+ 
+
+
+
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    
+  
+
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
