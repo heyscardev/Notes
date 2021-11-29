@@ -76,6 +76,13 @@ filter: drop-shadow(10px 0px 2px rgb(0 0 0 / 0.4));
 
 
  }
+ .content-title-window{
+  height:7em;
+  width: 100%;
+  margin: auto;
+  margin-left: -5%;
+
+}
 
  @media (max-width:768px) {
   
@@ -84,6 +91,7 @@ filter: drop-shadow(10px 0px 2px rgb(0 0 0 / 0.4));
     min-width: 15em;
   }
  }
- btn-close-img{
-     width: 100%;
+ .btn-close-img{
+    width: 3em;
  }
+
