@@ -1,5 +1,8 @@
+
+
 .principal{
     background-image: linear-gradient(to right, white 50%,#34C8D4 50%);
+   
    
   }
 
@@ -31,9 +34,29 @@
     
   }
   .principal-body{
-    min-height: 100vh;
-    position: absolute;
-    top: 0;
+   height: 80vh;
+   
+ 
+
     
   }
- 
+ .ratio{
+   
+   min-width: 8em;
+ }
+ .wave{
+transform: scaleY(50%) translateY(70%);
+width: 100%;
+filter: drop-shadow(10px 0px 2px rgb(0 0 0 / 0.4));
+;
+
+
+ }
+
+ @media (max-width:768px) {
+  
+  .ratio{
+   
+    min-width: 15em;
+  }
+ }

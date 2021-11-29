@@ -2,8 +2,12 @@ $primary: #34C8D4;
 $danger: #ff4136;
 $secondary: #dcdcdc;
 $info : #9bd0d4;
+$danger: orange;
 
-
+$border-radius:               1rem;
+$border-radius-sm:            .1rem;
+$border-radius-lg:            3rem;
+$border-radius-pill:          50rem;
  
 
 
@@ -12,8 +16,74 @@ $theme-colors: (
     "primary":    $primary,
     "secondary":  $secondary,
     "info":       $info,
+    "danger": $danger,
     
   
 
 );
-@import "../node_modules/bootstrap/scss/bootstrap.scss"
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.principal{
+    background-image: linear-gradient(to right, white 50%,#34C8D4 50%);
+   
+   
+  }
+
+  .icon-login{
+    width: 50px;
+  }
+  .hero{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .active{
+    font-weight: 800;
+    color:red
+  }
+
+ nav{
+   z-index: 2;
+ }
+
+  .formulario-sesion{
+    border: 2px solid #34C8D4;
+    position: absolute;
+    right: 5%;
+    top: 80px;
+    background-color: white;
+    border-radius: 20px;
+    
+  }
+  .principal-body{
+   height: 80vh;
+   
+ 
+
+    
+  }
+ .ratio{
+   
+   min-width: 8em;
+ }
+ .wave{
+transform: scaleY(50%) translateY(70%);
+width: 100%;
+filter: drop-shadow(10px 0px 2px rgb(0 0 0 / 0.4));
+;
+
+
+ }
+
+ @media (max-width:768px) {
+  
+  .ratio{
+   
+    min-width: 15em;
+  }
+ }
+ btn-close-img{
+     width: 100%;
+ }
